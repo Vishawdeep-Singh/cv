@@ -9,49 +9,46 @@ import {
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Vishawdeep Singh",
+  initials: "VS",
+  location: "Hisar,Haryana",
+  locationLink: "https://maps.app.goo.gl/ZQ4wLaWQ4wUKt8JA6",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+    "Creative and solution-driven Full Stack Engineer focused on delivering efficient and innovative web applications.",
   summary: (
     <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
+     From crafting intuitive interfaces using modern front-end frameworks to designing efficient server-side applications, I thrive in bridging the gap between user experience and complex back-end processes.
     </>
   ),
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+  avatarUrl: "/profile.png",
+  personalWebsiteUrl: "https://drive.google.com/file/d/1Ai-0bOJKBB5m4uEdRUGemxgEczoZIjK1/view",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "vishawdeepsingh29@gmail.com",
+    tel: "+91-9467829158",
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/Vishawdeep-Singh",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/vishawdeepsingh/",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/BartoszJarocki",
+        url: "https://x.com/Vishawdeep29",
         icon: XIcon,
       },
     ],
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
+      school: "Guru Jambheshwar University of Science and Technology",
+      degree: "B.Tech. in Electronics and Communication",
+      start: "2021",
+      end: "2025",
     },
   ],
   work: [
@@ -182,60 +179,76 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "React/Next.js/Remix",
+    "React/Next.js",
     "TypeScript",
     "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
+    "Postgresql",
+   "Express",
+
+   "MongoDB",
     "WebSockets",
     "Node.js",
     "GraphQL",
-    "Relay",
     "System Architecture",
-    "Remote Team Leadership",
+    "Java (DSA)",
+    "Docker",
+    "AWS"
   ],
   projects: [
     {
-      title: "Monito",
-      techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
+      title: "Zeus",
+      techStack: ["TypeScript", "Next.js", "PostgreSQL","Node.JS","Supabase","EC2"],
       description:
-        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
+        "Gym Management System: Built for small gyms, supporting 100 daily users with features like admin dashboard, membership tracking, real-time updates, and a fast, responsive Next.js frontend.",
       logo: MonitoLogo,
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "zeus",
+        href: "https://zeus.vishawdeepsingh.in",
       },
     },
     {
-      title: "Consultly",
+      title: "Vault",
       techStack: [
         "TypeScript",
         "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
+        "Cloudfare Workers",
         "Tailwind CSS",
         "PostgreSQL",
-        "Redis",
+        "Turborepo",
+        "CI/CD"
+      
       ],
       description:
-        "Platform for online consultations with real-time video meetings and scheduling",
+        "Built with Next.js and Aiven PostgreSQL, supporting 500 daily transactions. Features include P2P transfers, bank-to-wallet services, QR payments, and a merchant app for payment tracking. Managed architecture with Turborepo and deployed on EC2 with Docker and CI/CD automation.",
       logo: ConsultlyLogo,
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "Vault App",
+        href: "http://vault.user-app.vishawdeepsingh.in",
       },
     },
     {
-      title: "Minimalist CV",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      title: "Thought",
+      techStack: ["TypeScript", "React.JS", "Tailwind CSS","Hono.dev","Cloudflare Workers"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+        "A social networking platform supporting 200 daily users with features like posting, liking, commenting, following, and tag-based search. Built with a responsive React.js frontend and a scalable Node.js backend using Prisma, deployed on Cloudflare Workers for performance and reliability.",
       logo: MonitoLogo,
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "Thought",
+        href: "https://thoughtapp.vishawdeepsingh.in",
       },
     },
   ],
+  opensource:[
+    {
+      title: "Muzer",
+      techStack: ["TypeScript", "Next.js", "PostgreSQL","Websockets"],
+      description:
+        "Collaborative web based youtube playlist. Useful for music lovers in workspaces.",
+      logo: MonitoLogo,
+      link: {
+        label: "muzer",
+        href: "https://muzer.100xdevs.com",
+      },
+    },
+  ]
 } as const;

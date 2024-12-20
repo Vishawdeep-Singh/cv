@@ -1,4 +1,4 @@
-import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
+import { GlobeIcon, MailIcon, PhoneIcon,FileTextIcon} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { RESUME_DATA } from "@/data/resume-data";
@@ -58,13 +58,7 @@ function ContactButtons({ contact, personalWebsiteUrl }: ContactButtonsProps) {
       role="list"
       aria-label="Contact links"
     >
-      {personalWebsiteUrl && (
-        <SocialButton
-          href={personalWebsiteUrl}
-          icon={GlobeIcon}
-          label="Personal website"
-        />
-      )}
+     
       {contact.email && (
         <SocialButton
           href={`mailto:${contact.email}`}
@@ -87,6 +81,13 @@ function ContactButtons({ contact, personalWebsiteUrl }: ContactButtonsProps) {
           label={social.name}
         />
       ))}
+       {personalWebsiteUrl && (
+        <SocialButton
+          href={personalWebsiteUrl}
+          icon={FileTextIcon}
+          label="Resume"
+        />
+      )}
     </div>
   );
 }

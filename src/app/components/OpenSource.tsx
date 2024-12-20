@@ -1,3 +1,4 @@
+import { Link } from "lucide-react";
 import { Badge } from "../../components/ui/badge";
 import {
   Card,
@@ -115,18 +116,24 @@ function ProjectCard({ title, description, tags, link }: ProjectCardProps) {
 }
 
 interface ProjectsProps {
-  projects: (typeof RESUME_DATA)["projects"];
+  projects: (typeof RESUME_DATA)["opensource"];
 }
 
 /**
  * Section component displaying all side projects
  */
-export function Projects({ projects }: ProjectsProps) {
+export function OpenSource({ projects }: ProjectsProps) {
   return (
     <Section className="print-force-new-page scroll-mb-16 print:space-y-4 print:pt-12">
-      <h2 className="text-xl font-bold" id="side-projects">
-       Projects
-      </h2>
+      <a 
+        href={"https://cat-germanium-564.notion.site/Open-Source-Contributions-1623f394fd1680dca348d0828b57946a"}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={` Notion docs  (opens in new tab)`}
+      className="text-xl  cursor-pointer items-center font-bold flex space-x-3" id="side-projects">
+      <p>Open Source Contributions</p>
+      <span> <Link className="hover:underline" size={20}></Link> </span> 
+      </a>
       <div
         className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3"
         role="feed"
