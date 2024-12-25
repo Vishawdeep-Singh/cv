@@ -250,5 +250,36 @@ export const RESUME_DATA = {
         href: "https://muzer.100xdevs.com",
       },
     },
+    {
+      title: "Cinny",
+      techStack: ["TypeScript", "JavaScript", "SCSS", "React", "MatrixSDK"],
+      description:
+        "Cinny is an open-source, modern, and user-friendly self-hosted Discord client built with a focus on privacy and customizability. It's designed to be lightweight and provide a more streamlined, distraction-free experience when interacting with Discord.",
+      logo: MonitoLogo,
+      link: {
+        label: "cinny.in",
+        href: "https://cinny.in/",
+      },
+    },
+    {
+      title: "p5.js Editor",
+      techStack: [
+        "JavaScript",
+        "SCSS",
+        "p5.js",
+        "React",
+        "HCL",
+        "Shell",
+        "Docker",
+        "MDX",
+      ],
+      description:
+        "The p5.js Editor is a website for creating p5.js sketches, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! ",
+      logo: MonitoLogo,
+      link: {
+        label: "editor.p5js.org",
+        href: "https://editor.p5js.org/",
+      },
+    }
   ]
 } as const;
